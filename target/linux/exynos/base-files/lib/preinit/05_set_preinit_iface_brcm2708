@@ -1,0 +1,10 @@
+# Copyright (C) 2015-2016 OpenWrt.org
+# Copyright (C) 2017 LEDE project
+
+set_preinit_iface() {
+	. /lib/functions.sh
+
+        ifname=eth0
+}
+
+boot_hook_add preinit_main set_preinit_iface
